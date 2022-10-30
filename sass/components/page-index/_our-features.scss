@@ -3,6 +3,7 @@
     &__list-item {
             @media screen and (max-width:$mobile) {
             width: 450px;
+            margin: 0 auto;
         }
     }
     

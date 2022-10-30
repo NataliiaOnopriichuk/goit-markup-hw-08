@@ -1,0 +1,31 @@
+.our-customers {
+
+    &__title {
+        margin-bottom: 50px;
+    }
+    
+    &__list {
+        @include gap();
+    }
+    
+    &__list-link {
+        @include flexed();
+        border-radius: 4px;
+        height: 92px;
+        width: 170px;
+    
+        border: 1px solid $primary-icon-color;
+        fill: $primary-icon-color;
+        color: $accent-color;
+    
+        cursor: pointer;
+    
+        transition: fill 250ms $transition-effect,
+        border 250ms $transition-effect;
+        
+        &:hover, &:focus {
+            fill: currentColor;
+            border: 1px solid currentColor; 
+        }
+    }
+}

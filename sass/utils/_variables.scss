@@ -1,0 +1,42 @@
+    $primary-text-color:#757575;
+    $secondary-gray-color:#F5F4FA;
+    $title-text-color:#212121;
+    $accent-color:#2196F3;
+    $primary-white-color:#FFFFFF;
+    $secondary-white-color:rgba(255, 255, 255, 0.6);
+    $background-transform-gray:rgba(47, 48, 58, 0.8);
+    $background-transform-light-gray:rgba(255, 255, 255, 0.1);
+    $light-gray:rgba(255, 255, 255, 0.3);
+    $background-grey:#2F303A;
+    $hover-blue-color:#188CE8;
+    $primary-icon-color:#AFB1B8;
+    $decoration-color:#000000;
+    $light-border:#ECECEC;
+    $fill-icon:#AFB1B8;
+
+    
+    
+    // transition
+    $transition-effect:cubic-bezier(0.4,0,0.2,1);
+
+    // mixin
+
+        
+    @mixin flexed($flex: flex, $alignItems: center, $justifyContent: center) {
+        display: $flex;
+        align-items:$alignItems;
+        justify-content: $justifyContent;
+     }
+
+   @mixin font($fontWeight: 400, $fontSize: 14px, $lineHeight: 1.14, $letterSpacing: 0.03em) {
+        font-weight: $fontWeight;
+        font-size: $fontSize;
+        line-height: $lineHeight;
+        letter-spacing: $letterSpacing;
+     }
+
+   @mixin gap ($gap:30px) {
+      display: flex;
+      gap: $gap;
+   }
+

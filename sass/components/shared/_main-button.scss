@@ -1,0 +1,13 @@
+.main-button {
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+
+    color:$primary-white-color;
+    background-color:$accent-color;
+
+    font-family: inherit;
+    @include font(700, 16px,1.9);
+
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+/* logo */
+.logo {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #000000;
+
+    font-family: Raleway, sans-serif;
+    @include font(700, 26px);
+    text-decoration: none;
+    
+
+    &__content {
+        color: $accent-color;
+        
+        font-family: Raleway, sans-serif;
+    }
+    
+    &--color {
+        display:block;
+        margin-bottom: 20px;
+
+        color:$primary-white-color;
+    }
+      
+}
+
+

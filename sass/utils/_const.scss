@@ -24,18 +24,15 @@ svg {
 .container {
   margin: 0 auto;
   padding: 0 15px;
+  width: 450px;
 
-  @media screen and (min-width: $mobile) {
-    width: 450px;
-  }
+  // @media screen and (min-width: $tablet) {
+  //   width: 419px;
+  // }
 
-  @media screen and (min-width: $tablet) {
-    width: 419px;
-  }
-
-  @media screen and (min-width: $desctop) {
-    width: 1200px;
-  }
+  // @media screen and (min-width: $desctop) {
+  //   width: 1200px;
+  // }
 }
 
 /* маркери */

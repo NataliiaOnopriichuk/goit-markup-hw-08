@@ -1,47 +1,46 @@
-/* main nav */
 .main-nav {
-    @media screen and (min-width:481px) {
-        width: 481px;
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
 
+  &__list {
+    @media screen and (max-width: $mobile) {
+      display: none;
     }
-   
-    &__list {
-        @media screen and (max-width:480px) {
-        display: none;
+  }
+  &__contacts {
+    @media screen and (max-width: $mobile) {
+      display: none;
     }
-
-    }
-    
-    // &__list-item {
-    //     position: relative;
-    // }
-    
-    
-    &__list-link {
-        // display: block;
-        // padding-top: 32px;
-        // padding-bottom: 32px;
-        
-        color: $title-text-color;
-        letter-spacing: 0.02em;
-        
-        @include font(500);
-        text-decoration: none;
-        
-        transition: color 250ms $transition-effect;
-        
-        &:hover,&_:focus {
-            color: $accent-color;
-        }
-        
-        &--active {
-            color: $accent-color;
-        }   
-
-    }
+  }
 }
 
+//     }
 
+//     &__list-item {
+//         position: relative;
+//     }
 
+//     &__list-link {
+//         display: block;
+//         padding-top: 32px;
+//         padding-bottom: 32px;
 
+//         color: $title-text-color;
+//         letter-spacing: 0.02em;
 
+//         @include font(500);
+//         text-decoration: none;
+
+//         transition: color 250ms $transition-effect;
+
+//         &:hover,&_:focus {
+//             color: $accent-color;
+//         }
+
+//         &--active {
+//             color: $accent-color;
+//         }
+
+//     }
+// }

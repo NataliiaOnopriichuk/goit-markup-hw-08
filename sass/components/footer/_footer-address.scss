@@ -1,38 +1,38 @@
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+// .footer {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
 
-    background-color: $background-grey;
-    
-    &__nav {
-        @include flexed (flex, baseline, null);
-    }
-    
-    &__adress-list {
-        @include gap(9px);
-        flex-direction: column;
-    
-        font-style: normal;   
-    }
-    
-    &__adress-content {
-        color: $primary-white-color;
-    
-        @include font($lineHeight: 1.71);
-        text-decoration: none;
-    }
-    
-    &__adress-link {
-        color: $secondary-white-color;
-    
-        @include font ($lineHeight: 1.71);
-        text-decoration: none;
-    
-        transition: color 250ms $transition-effect;
-    
-        &:hover,
-        &:focus {
-            color: $accent-color;
-        }
-    }
-}
+//     background-color: $background-grey;
+
+//     &__nav {
+//         @include flexed (flex, baseline, null);
+//     }
+
+//     &__adress-list {
+//         @include gap(9px);
+//         flex-direction: column;
+
+//         font-style: normal;
+//     }
+
+//     &__adress-content {å
+//         color: $primary-white-color;
+
+//         @include font($lineHeight: 1.71);
+//         text-decoration: none;
+//     }
+
+//     &__adress-link {
+//         color: $secondary-white-color;
+
+//         @include font ($lineHeight: 1.71);
+//         text-decoration: none;
+
+//         transition: color 250ms $transition-effect;
+
+//         &:hover,
+//         &:focus {
+//             color: $accent-color;
+//         }
+//     }
+// }

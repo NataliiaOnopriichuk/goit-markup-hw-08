@@ -1,0 +1,22 @@
+@mixin flexed($flex: flex, $alignItems: center, $justifyContent: center) {
+  display: $flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+@mixin font(
+  $fontWeight: null,
+  $fontSize: 16px,
+  $lineHeight: 1.9,
+  $letterSpacing: 0.06em
+) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin gap($gap: 30px) {
+  display: flex;
+  gap: $gap;
+}

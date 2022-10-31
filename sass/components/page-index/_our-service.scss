@@ -1,35 +1,34 @@
 .our-service {
-    @media screen and (max-width:480px) {
-        display: none;
-    }
-    padding-top: 0;
-
-    &__title {
-        margin-bottom: 50px;
-    } 
-    &__list {
-        @include gap ();
-    }
-    &__list-tumb {
-        position: relative;
-    }
-    
-    &__tumb-text {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-    
-        width: 100%;
-        height: 70px;
-        padding: 27px 0;
-    
-        background-color:$background-transform-gray;
-        color: $primary-white-color;
-    
-        @include font ($fontWeight: 700);
-        text-align: center;
-        text-transform: uppercase;
-    }
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  padding-top: 0;
 }
 
+//     &__title {
+//         margin-bottom: 50px;
+//     }
+//     &__list {
+//         @include gap ();
+//     }
+//     &__list-tumb {
+//         position: relative;
+//     }
 
+//     &__tumb-text {
+//         position: absolute;
+//         left: 0;
+//         bottom: 0;
+
+//         width: 100%;
+//         height: 70px;
+//         padding: 27px 0;
+
+//         background-color:$background-transform-gray;
+//         color: $primary-white-color;
+
+//         @include font ($fontWeight: 700);
+//         text-align: center;
+//         text-transform: uppercase;
+//     }
+// }

@@ -1,48 +1,63 @@
-
 body {
-    background-color: $primary-white-color;
-    color: $primary-text-color;
+  background-color: $primary-white-color;
+  color: $primary-text-color;
 
-    font-family: roboto, sans-serif;
-    letter-spacing: 0.03em;
-    font-size: 14px;
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
-h1, h2, h3, p, ul {
-    margin-top: 0;
-    margin-bottom: 0;
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-img, svg {
-    display: block;
+img,
+svg {
+  display: block;
 }
 
 .container {
-margin: 0 auto;
-padding: 0 15px;
-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 419px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 1200px;
+  }
 }
 
 /* маркери */
 ul {
-    list-style: none;
-    padding-inline-start: 0;
+  list-style: none;
+  padding-inline-start: 0;
 }
 
 /* прихований текст */
 .visually-hidden {
   position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 header {
-    border-bottom: 1px solid $light-border;
+  border-bottom: 1px solid $light-border;
 }

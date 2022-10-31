@@ -1,0 +1,52 @@
+/* main nav */
+.main-nav {
+    @include flexed();
+   
+    &__list {
+        @include gap(50px);
+        margin-left: 93px;
+    }
+    
+    &__list-item {
+        position: relative;
+    }
+    
+    &__list-link--active::after {
+        content:'';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+    
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $accent-color;
+    }
+    
+    &__list-link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        color: $title-text-color;
+        letter-spacing: 0.02em;
+    
+        @include font(500);
+        text-decoration: none;
+    
+        transition: color 250ms $transition-effect;
+
+        &:hover,&_:focus {
+            color: $accent-color;
+        }
+    }   
+    
+        &__list-link--active {
+        color: $accent-color;
+    }
+}
+
+
+
+
+

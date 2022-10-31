@@ -1,9 +1,10 @@
 .section-title {
   color: $title-text-color;
 
-  @media screen and (max-width: $mobile) {
-    font-size: 28px;
-  }
-  @include font(700, 36px, 1.17);
+  @include font(700, 28px, 1.19, 0.03em);
   text-align: center;
+
+  @media screen and (min-width: $desctop) {
+    @include font(700, 36px, 1.17, 0.03em);
+  }
 }

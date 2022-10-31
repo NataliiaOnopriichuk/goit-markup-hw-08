@@ -1,28 +1,38 @@
 /* logo */
 .logo {
+  color: #000000;
+
+  font-family: Raleway, sans-serif;
+  @include font(700, 24px, 1.17);
+  text-decoration: none;
+
+  &__content {
+    color: $accent-color;
+
+    font-family: Raleway, sans-serif;
+  }
+
+  &--padding {
     display: block;
     padding-top: 16px;
     padding-bottom: 16px;
-    color: #000000;
 
-    font-family: Raleway, sans-serif;
-    @include font(700, 26px);
-    text-decoration: none;
-    
-
-    &__content {
-        color: $accent-color;
-        
-        font-family: Raleway, sans-serif;
+    @media screen and (min-width: 768px) {
+      padding-top: 26px;
+      padding-bottom: 26px;
     }
-    
-    &--color {
-        display:block;
-        margin-bottom: 20px;
 
-        color:$primary-white-color;
+    @media screen and (min-width: 1200px) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      @include font(700, 26px, 1.19);
     }
-      
+  }
+
+  &--color {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $primary-white-color;
+  }
 }
-
-

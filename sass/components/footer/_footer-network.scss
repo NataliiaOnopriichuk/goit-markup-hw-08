@@ -1,15 +1,31 @@
 .footer {
+  &__wrapper {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      align-items: baseline;
+      gap: 165px;
+      margin-left: 76px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      gap: 70px;
+    }
+  }
+
   &__network {
-    margin: auto;
-    margin-bottom: 60px;
     width: 206px;
     text-align: center;
 
-    // @media screen and (min-width: 1200px) {
-    //   margin-left: 70px;
-    //   margin-bottom: none;
-    //   text-align: none;
-    // }
+    @media screen and (max-width: 767px) {
+      margin: auto;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin: none;
+    }
   }
 
   &__network-title {
@@ -19,11 +35,6 @@
     text-transform: uppercase;
     text-align: center;
     color: $primary-white-color;
-
-    // @media screen and (min-width: 1200px) {
-    //   @include font(700, 14px);
-    //   text-align: none;
-    // }
   }
 
   &__network-list {

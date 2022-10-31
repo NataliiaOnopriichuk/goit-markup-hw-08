@@ -33,12 +33,10 @@
     display: block;
     margin-bottom: 20px;
 
-    text-align: center;
-
     color: $primary-white-color;
 
-    // @media screen and (min-width: 1200px) {
-    //   text-align: none;
-    // }
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 }

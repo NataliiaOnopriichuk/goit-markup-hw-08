@@ -1,52 +1,64 @@
-// .footer {
+.footer {
+  &__form {
+    display: flex;
+    flex-direction: column;
 
-//     &__form {
-//         display: flex;
-//         flex-direction: column;
+    // @media screen and (min-width: 1200px) {
+    //   margin-left: 93px;
+    // }
+  }
 
-//         margin-left: 93px;
-//     }
+  &__form-field {
+    @media screen and (max-width: 767px) {
+      @include gap(20px);
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
-//     &__form-input {
-//         width: 358px;
-//         height: 50px;
-//         padding-left: 16px;
+  &__form-input {
+    width: 450px;
+    height: 50px;
+    padding-left: 16px;
 
-//         color:$primary-white-color;
-//         background-color:transparent;
-//         border: 1px solid $light-gray;
-//         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//         border-radius: 4px;
-//         outline: none;
+    color: $primary-white-color;
+    background-color: transparent;
+    border: 1px solid $light-gray;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
 
-//         &:focus {
-//             border: 1px solid $accent-color;
-//         }
-//     }
+    &:focus {
+      border: 1px solid $accent-color;
+    }
 
-//     &__form-input::placeholder {
-//         @include font(400, 16px, 1.25);
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+  }
 
-//         color: $secondary-white-color;
-//     }
+  &__form-input::placeholder {
+    @include font(400, 16px, 1.25);
 
-//     &__form-btn {
-//         @include flexed ($flex: inline-flex);
+    color: $secondary-white-color;
+  }
 
-//         padding: 10px 28px;
-//         margin-left: 12px;
-//         height: 50px;
-//         width: 200px;
+  &__form-btn {
+    @include flexed($flex: inline-flex);
 
-//         border: none;
-//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 28px;
+    height: 50px;
+    width: 200px;
 
-//         letter-spacing: 0.06em;
-//         text-align: center;
-//     }
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-//     &__form-icon {
-//         fill: currentColor;
-//         margin-left: 10px;
-//     }
-// }
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  &__form-icon {
+    fill: currentColor;
+    margin-left: 10px;
+  }
+}

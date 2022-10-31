@@ -1,38 +1,46 @@
-// .footer {
-//     padding-top: 60px;
-//     padding-bottom: 60px;
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-//     background-color: $background-grey;
+  background-color: $background-grey;
 
-//     &__nav {
-//         @include flexed (flex, baseline, null);
-//     }
+  //   &__nav {
+  //     @include flexed(flex, baseline, null);
+  //   }
 
-//     &__adress-list {
-//         @include gap(9px);
-//         flex-direction: column;
+  &__adress-list {
+    margin-bottom: 60px;
 
-//         font-style: normal;
-//     }
+    @include gap(9px);
+    flex-direction: column;
+    align-items: center;
 
-//     &__adress-content {å
-//         color: $primary-white-color;
+    font-style: normal;
 
-//         @include font($lineHeight: 1.71);
-//         text-decoration: none;
-//     }
+    // @media screen and (min-width:1200px) {
+    //     align-items: none;
+    //     margin-bottom: none;
+    // }
+  }
 
-//     &__adress-link {
-//         color: $secondary-white-color;
+  &__adress-content {
+    color: $primary-white-color;
 
-//         @include font ($lineHeight: 1.71);
-//         text-decoration: none;
+    @include font($lineHeight: 1.71);
+    text-decoration: none;
+  }
 
-//         transition: color 250ms $transition-effect;
+  &__adress-link {
+    color: $secondary-white-color;
 
-//         &:hover,
-//         &:focus {
-//             color: $accent-color;
-//         }
-//     }
-// }
+    @include font($lineHeight: 1.71);
+    text-decoration: none;
+
+    transition: color 250ms $transition-effect;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}

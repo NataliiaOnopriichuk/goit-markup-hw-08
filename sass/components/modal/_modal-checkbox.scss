@@ -1,70 +1,79 @@
-// .modal {
+.modal {
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
 
-//     &__checkbox {
-//         position: absolute;
-//         opacity: 0;
+    z-index: -1;
 
-//         z-index: -1;
+    &:checked + .modal__checkbox-label .modal__checkbox-new {
+      border: none;
+    }
 
-//         &:checked+ .modal__checkbox-label .modal__checkbox-new {
-//             border: none;
-//         }
+    &:checked
+      + .modal__checkbox-label
+      .modal__checkbox-new
+      .modal__checkbox-icon {
+      opacity: 1;
+      transition: opacity 250ms $transition-effect;
+    }
+  }
 
-//         &:checked+ .modal__checkbox-label .modal__checkbox-new .modal__checkbox-icon {
-//             opacity: 1;
-//             transition: opacity 250ms $transition-effect;
-//         }
-//     }
+  &__checkbox-label {
+    @include flexed();
+    @include gap(7px);
 
-//     &__checkbox-label {
-//         @include flexed();
-//         @include gap(7px);
+    margin-bottom: 30px;
 
-//         margin-bottom: 30px;
+    cursor: pointer;
+  }
 
-//         cursor: pointer;
-//     }
+  &__checkbox-new {
+    position: relative;
 
-//     &__checkbox-new {
-//         position: relative;
+    @include flexed();
 
-//         @include flexed();
+    width: 16px;
+    height: 15px;
 
-//         width: 16px;
-//         height: 15px;
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+  }
 
-//         border: 2px solid $title-text-color;
-//         border-radius: 2px;
-//     }
+  &__checkbox-icon {
+    opacity: 0;
+  }
 
-//     &__checkbox-icon {
-//         opacity: 0;
-//     }
+  &__checkbox-text {
+    @include font($fontSize: 12px, $lineHeight: 1.17);
 
-//     &__checkbox-text {
-//         @include font($lineHeight:1.71);
+    color: $primary-text-color;
 
-//         color: $primary-text-color;
-//     }
+    @media screen and (min-width: 1200px) {
+      @include font($fontSize: 14px, $lineHeight: 1.71);
+    }
+  }
 
-//     &__checkbox-link {
-//         @include font($lineHeight: 1.71);
+  &__checkbox-link {
+    @include font($fontSize: 12px, $lineHeight: 1.17);
 
-//         color: $accent-color;
-//     }
+    color: $accent-color;
 
-//     &__checkbox-btn {
-//         display: block;
-//         padding: 10px 52px;
-//         margin: 0 auto;
-//         height: 50px;
-//         width: 200px;
+    @media screen and (min-width: 1200px) {
+      @include font($fontSize: 14px, $lineHeight: 1.71);
+    }
+  }
 
-//         border: none;
+  &__checkbox-btn {
+    display: block;
+    padding: 10px 52px;
+    margin: 0 auto;
+    height: 50px;
+    width: 200px;
 
-//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
 
-//         font-family: inherit;
-//     }
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-// }
+    font-family: inherit;
+  }
+}

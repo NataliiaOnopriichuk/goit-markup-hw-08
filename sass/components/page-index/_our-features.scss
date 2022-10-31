@@ -2,7 +2,26 @@
   &__list {
     @include gap();
     flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      flex-flow: wrap row;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
+
+  &__list-item {
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+
   &__list-wrapper {
     @include flexed();
     margin-bottom: 30px;

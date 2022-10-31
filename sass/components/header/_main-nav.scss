@@ -41,7 +41,7 @@
       transition: color 250ms $transition-effect;
 
       &:hover,
-      &_:focus {
+      &:focus {
         color: $accent-color;
       }
 
@@ -79,7 +79,7 @@
     }
 
     &__contacts-link {
-      @include flexed(flex, center);
+      @include flexed(flex, center, left);
 
       color: $primary-text-color;
       fill: $primary-text-color;

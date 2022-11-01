@@ -1,4 +1,5 @@
 .main-nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,6 +31,18 @@
   &__burger.is-open &__icon-menu {
     display: none;
   }
+
+  // &__menu-container {
+  //   display: none;
+
+  //   position: absolute;
+  //   top: 100%;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   padding: 48px 40px;
+  //   background-color: aquamarine;
+  // }
 }
 
 .main-nav {

@@ -1,5 +1,14 @@
 .main-nav {
-  position: relative;
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 96px;
+
+    @media screen and (min-width: 1200px) {
+      gap: 315px;
+    }
+  }
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,39 +19,6 @@
   &__contacts {
     display: none;
   }
-
-  &__burger {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-  }
-
-  &__icon-cross {
-    display: none;
-  }
-
-  &__burger.is-open &__icon-cross {
-    display: block;
-  }
-
-  &__burger.is-open &__icon-menu {
-    display: none;
-  }
-
-  // &__menu-container {
-  //   display: none;
-
-  //   position: absolute;
-  //   top: 100%;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   padding: 48px 40px;
-  //   background-color: aquamarine;
-  // }
 }
 
 .main-nav {

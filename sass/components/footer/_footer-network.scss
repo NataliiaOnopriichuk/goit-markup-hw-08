@@ -35,6 +35,10 @@
     text-transform: uppercase;
     text-align: center;
     color: $primary-white-color;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   &__network-list {

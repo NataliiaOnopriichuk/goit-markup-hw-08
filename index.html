@@ -52,13 +52,40 @@
           </li>
           <li class="main-nav__contacts-item">
             <a class="main-nav__contacts-link" href="tel:+380961111111">
-              <svg class="main-nav__contacts-icon" height="14" width="10">
+              <svg
+                class="main-nav__contacts-icon main-nav__contacts-icon--size"
+                height="14"
+                width="10"
+              >
                 <use href="./images/sprite.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
+        <button
+          class="main-nav__burger is-open"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="main-nav__burger-icon"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use
+              class="main-nav__icon-cross"
+              href="./images/sprite.svg#icon-cross"
+            ></use>
+            <use
+              class="main-nav__icon-menu"
+              href="./images/sprite.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Основний контент -->
@@ -664,5 +691,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

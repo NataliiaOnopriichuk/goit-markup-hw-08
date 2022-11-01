@@ -16,9 +16,14 @@ ul {
   margin-bottom: 0;
 }
 
-img,
 svg {
   display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {

@@ -64,11 +64,10 @@
           </li>
         </ul>
         <button
-          class="main-nav__burger"
+          class="main-nav__burger is-open"
           type="button"
           aria-expanded="false"
           aria-controls="menu-container"
-          data-menu-button
         >
           <svg
             class="main-nav__burger-icon"
@@ -687,8 +686,15 @@
       </div>
     </div>
     <!-- мобільне меню -->
-    <div class="main-nav__menu-container" id="menu-container" data-menu>
-      <button type="button" class="main-nav__burger main-nav__burger--position">
+    <div
+      class="main-nav__menu-container main-nav__menu-container--is-hidden"
+      id="menu-container"
+    >
+      <button
+        type="button"
+        class="main-nav__burger main-nav__burger--position"
+        aria-label="Перемикач мобільного меню"
+      >
         <svg class="main-nav__icon-cross" width="40" height="40">
           <use
             class="main-nav__icon-cross"
@@ -699,7 +705,11 @@
       <nav class="main-nav__menu-nav">
         <ul class="main-nav__menu-list">
           <li class="main-nav__menu-item">
-            <a class="main-nav__menu-link" href="./index.html">Студія</a>
+            <a
+              class="main-nav__menu-link main-nav__menu-link--active"
+              href="./index.html"
+              >Студія</a
+            >
           </li>
           <li class="main-nav__menu-item">
             <a class="main-nav__menu-link" href="./portfolio.html">Портфоліо</a>
@@ -727,12 +737,15 @@
         <ul class="main-nav__menu-social">
           <li class="main-nav__social-item">
             <a href="" class="main-nav__social-link">Instagram</a>
+            <span class="main-nav__social-icon"></span>
           </li>
           <li class="main-nav__social-item">
             <a href="" class="main-nav__social-link">Twitter</a>
+            <span class="main-nav__social-icon"></span>
           </li>
           <li class="main-nav__social-item">
             <a href="" class="main-nav__social-link">Facebook</a>
+            <span class="main-nav__social-icon"></span>
           </li>
           <li class="main-nav__social-item">
             <a href="" class="main-nav__social-link">LinkedIn</a>

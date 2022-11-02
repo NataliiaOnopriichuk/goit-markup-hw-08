@@ -9,6 +9,12 @@
     background-color: $primary-white-color;
   }
 
+  &__icon-cross:hover,
+  &__icon-cross:focus {
+    fill: $accent-color;
+    transition: fill 250ms $transition-effect;
+  }
+
   &__menu-list,
   &__menu-info {
     @include gap(32px);

@@ -36,11 +36,9 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      .main-screen {
-        background-image: url('../images/tablet/hero-tablet@2x.jpg');
-        background-position: center;
-        background-size: cover;
-      }
+      background-image: url('../images/tablet/hero-tablet@2x.jpg');
+      background-position: center;
+      background-size: cover;
     }
   }
 
@@ -61,11 +59,9 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      .main-screen {
-        background-image: url('../images/desctop/hero-desctop@2x.jpg');
-        background-position: center;
-        background-size: cover;
-      }
+      background-image: url('../images/desctop/hero-desctop@2x.jpg');
+      background-position: center;
+      background-size: cover;
     }
   }
 

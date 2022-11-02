@@ -22,10 +22,10 @@
     <header>
       <!-- Навігація на інші сторінки -->
       <div class="container main-nav">
+        <a class="logo logo--padding" href="./index.html"
+          ><span class="logo__content">Web</span>Studio</a
+        >
         <nav class="main-nav">
-          <a class="logo" href="./index.html"
-            ><span class="logo__content">Web</span>Studio</a
-          >
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
               <a class="main-nav__list-link" href="./index.html">Студія</a>
@@ -46,7 +46,7 @@
         <ul class="main-nav__contacts">
           <li class="main-nav__contacts-item">
             <a class="main-nav__contacts-link" href="mailto:info@devstudio.com">
-              <svg class="main-nav__contacts-icon" height="12" width="16">
+              <svg class="main-nav__contacts-icon" height="10" width="14">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -56,7 +56,7 @@
             <a class="main-nav__contacts-link" href="tel:+380961111111">
               <svg
                 class="main-nav__contacts-icon main-nav__contacts-icon--size"
-                height="16"
+                height="14"
                 width="10"
               >
                 <use href="./images/sprite.svg#icon-tel"></use>
@@ -65,6 +65,25 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <!--  Основний контент -->
@@ -395,5 +414,75 @@
         </div>
       </div>
     </footer>
+    <!-- мобільне меню -->
+    <div
+      class="main-nav__menu-container menu-container js-menu-container"
+      id="mobile-menu"
+    >
+      <button class="menu-toggle js-close-menu">
+        <svg class="main-nav__icon-cross" width="44px" height="44px">
+          <use href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <nav class="main-nav__menu-nav">
+        <ul class="main-nav__menu-list">
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="./index.html">Студія</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a
+              class="main-nav__menu-link main-nav__menu-link--active"
+              href="./portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Контакти -->
+      <div class="main-nav__menu-inner">
+        <ul class="main-nav__menu-info">
+          <li class="main-nav__info-item">
+            <a class="main-nav__info-link" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="main-nav__info-item">
+            <a class="main-nav__info-link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <!-- соціальні мережі -->
+        <ul class="main-nav__menu-social">
+          <li class="main-nav__social-item">
+            <a href="" class="main-nav__social-link">Instagram</a>
+            <span class="main-nav__social-icon"></span>
+          </li>
+          <li class="main-nav__social-item">
+            <a href="" class="main-nav__social-link">Twitter</a>
+            <span class="main-nav__social-icon"></span>
+          </li>
+          <li class="main-nav__social-item">
+            <a href="" class="main-nav__social-link">Facebook</a>
+            <span class="main-nav__social-icon"></span>
+          </li>
+          <li class="main-nav__social-item">
+            <a href="" class="main-nav__social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

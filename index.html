@@ -64,21 +64,22 @@
           </li>
         </ul>
         <button
-          class="main-nav__burger is-open"
-          type="button"
+          class="menu-toggle js-open-menu"
           aria-expanded="false"
-          aria-controls="menu-container"
+          aria-controls="mobile-menu"
         >
           <svg
-            class="main-nav__burger-icon"
-            width="40"
-            height="40"
-            aria-label="Перемикач мобільного меню"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <use
-              class="main-nav__icon-menu"
-              href="./images/sprite.svg#icon-menu"
-            ></use>
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
           </svg>
         </button>
       </div>
@@ -207,26 +208,31 @@
                     ./images/mobile/ProductDesigner@1x.jpg 1x,
                     ./images/mobile/ProductDesigner@2x.jpg 2x
                   "
-                  media="max-width:767px"
+                  media="(max-width:767px)"
                 />
                 <source
                   srcset="
                     ./images/tablet/ProductDesigner@1x.jpg 1x,
                     ./images/tablet/ProductDesigner@2x.jpg 2x
                   "
-                  media="max-width:1199px"
+                  media="(min-width:768px)"
                 />
                 <source
                   srcset="
                     ./images/desctop/ProductDesigner@1x.jpg 1x,
                     ./images/desctop/ProductDesigner@2x.jpg 2x
                   "
-                  media="min-width:1200px"
+                  media="(min-width:1200px)"
                 />
                 <img
                   class="our-team__list-img"
+                  srcset="
+                    ./images/mobile/ProductDesigner@1x.jpg 1x,
+                    ./images/mobile/ProductDesigner@2x.jpg 2x
+                  "
                   src="./images/ProductDesigner.jpg"
                   alt="Усміхнений мужчина в окулярах"
+                  width="100%"
                 />
               </picture>
               <div class="our-team__list-wrapper">
@@ -271,26 +277,31 @@
                     ./images/mobile/FrontendDeveloper@1x.jpg 1x,
                     ./images/mobile/FrontendDeveloper@2x.jpg 2x
                   "
-                  media="max-width:767px"
+                  media="(max-width:767px)"
                 />
                 <source
                   srcset="
                     ./images/tablet/FrontendDeveloper@1x.jpg 1x,
                     ./images/tablet/FrontendDeveloper@2x.jpg 2x
                   "
-                  media="max-width:1199px"
+                  media="(min-width:768px)"
                 />
                 <source
                   srcset="
                     ./images/desctop/FrontendDeveloper@1x.jpg 1x,
                     ./images/desctop/FrontendDeveloper@2x.jpg 2x
                   "
-                  media="min-width:1200px"
+                  media="(min-width:1200px)"
                 />
                 <img
                   class="our-team__list-img"
+                  srcset="
+                    ./images/mobile/FrontendDeveloper@1x.jpg 1x,
+                    ./images/mobile/FrontendDeveloper@2x.jpg 2x
+                  "
                   src="./images/FrontendDeveloper.jpg"
                   alt="Усміхнена дівчина в окулярах"
+                  width="100%"
                 />
               </picture>
               <div class="our-team__list-wrapper">
@@ -337,26 +348,30 @@
                     ./images/mobile/Marketing@1x.jpg 1x,
                     ./images/mobile/Marketing@2x.jpg 2x
                   "
-                  media="max-width:767px"
+                  media="(max-width:767px)"
                 />
                 <source
                   srcset="
                     ./images/tablet/Marketing@1x.jpg 1x,
                     ./images/tablet/Marketing@2x.jpg 2x
                   "
-                  media="max-width:1199px"
+                  media="(min-width:768px)"
                 />
                 <source
                   srcset="
                     ./images/desctop/Marketing@1x.jpg 1x,
                     ./images/desctop/Marketing@2x.jpg 2x
                   "
-                  media="min-width:1200px"
+                  media="(min-width:1200px)"
                 />
                 <img
-                  class="our-team__list-img"
+                  srcset="
+                    ./images/mobile/Marketing@1x.jpg 1x,
+                    ./images/mobile/Marketing@2x.jpg 2x
+                  "
                   src="./images/Marketing.jpg"
                   alt="Усміхнений хлопець"
+                  width="100%"
                 />
               </picture>
               <div class="our-team__list-wrapper">
@@ -401,26 +416,30 @@
                     ./images/mobile/UI-Designer@1x.jpg 1x,
                     ./images/mobile/UI-Designer@2x.jpg 2x
                   "
-                  media="max-width:767px"
+                  media="(max-width:767px)"
                 />
                 <source
                   srcset="
                     ./images/tablet/UI-Designer@1x.jpg 1x,
                     ./images/tablet/UI-Designer@2x.jpg 2x
                   "
-                  media="max-width:1199px"
+                  media="(min-width:768px)"
                 />
                 <source
                   srcset="
                     ./images/desctop/UI-Designer@1x.jpg 1x,
                     ./images/desctop/UI-Designer@2x.jpg 2x
                   "
-                  media="min-width:1200px"
+                  media="(min-width:1200px)"
                 />
                 <img
-                  class="our-team__list-img"
+                  srcset="
+                    ./images/mobile/UI-Designer@1x.jpg 1x,
+                    ./images/mobile/UI-Designer@2x.jpg 2x
+                  "
                   src="./images/UI-Designer.jpg"
                   alt="Усміхнений хлопець з бородою"
+                  width="100%"
                 />
               </picture>
               <div class="our-team__list-wrapper">
@@ -687,21 +706,15 @@
     </div>
     <!-- мобільне меню -->
     <div
-      class="main-nav__menu-container main-nav__menu-container--is-hidden"
-      id="menu-container"
+      class="main-nav__menu-container menu-container js-menu-container"
+      id="mobile-menu"
     >
-      <button
-        type="button"
-        class="main-nav__burger main-nav__burger--position"
-        aria-label="Перемикач мобільного меню"
-      >
-        <svg class="main-nav__icon-cross" width="40" height="40">
-          <use
-            class="main-nav__icon-cross"
-            href="./images/sprite.svg#icon-cross"
-          ></use>
+      <button class="menu-toggle js-close-menu">
+        <svg class="main-nav__icon-cross" width="44px" height="44px">
+          <use href="./images/sprite.svg#icon-cross"></use>
         </svg>
       </button>
+
       <nav class="main-nav__menu-nav">
         <ul class="main-nav__menu-list">
           <li class="main-nav__menu-item">
@@ -753,6 +766,12 @@
         </ul>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

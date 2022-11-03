@@ -49,13 +49,21 @@
     display: block;
     color: $primary-text-color;
     text-decoration: none;
-    transition: color 250ms $transition-effect,
-      transform 250ms $transition-effect, translateX 250ms $transition-effect;
+    transition: color 250ms $transition-effect;
 
     &:hover,
     &:focus {
       color: $accent-color;
-      transform: scale(1.2) translateX(42px);
+    }
+
+    &--color {
+      color: $accent-color;
+      font-size: 27px;
+      line-height: 1.18;
+
+      @media (min-width: 455px) {
+        font-size: 34px;
+      }
     }
   }
 
@@ -66,7 +74,11 @@
 
   &__social-item {
     display: flex;
-    @include font(500, 18px, 1.2, 0.02em);
+    @include font(500, 12px, 1.2, 0.02em);
+
+    @media (min-width: 455px) {
+      font-size: 18px;
+    }
   }
 
   &__social-link {
@@ -84,10 +96,8 @@
   padding: 0;
   margin: 0;
   list-style: none;
-}
 
-@media (max-width: 767px) {
-  .menu {
+  @media (max-width: 767px) {
     display: none;
   }
 }
